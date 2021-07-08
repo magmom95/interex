@@ -29,8 +29,17 @@
         padding : 8px 20px;
       }
     </style>
-    <script>
-      //변수, 조건문 if, 배열
+    </head>
+    <body>
+      <div class="contWrap">
+        <h3>내가 생각한 숫자는 몇 일까~요?</h3>
+        <p class="result">(1부터 10사이)</p>
+        <input type="number" value="1" max="10" min="1">
+        <button type="button" class="startBtn">확인</button>
+      </div>
+    </body>
+        <script>
+    
 
       window.onload = function(){
         var input = document.getElementsByTagName("input")[0];
@@ -42,18 +51,11 @@
         });
 
         var resultArr = ["업 ▲", "다운 ▼", "정답!"];
-        var randomNum = 5; //정답
+        var randomNum = 5; 
 
         function resultFunc(){
           var value = input.value;
-          // alert(value)
-
-          // if(value == randomNum){
-          //   alert("정답")
-          // }else {
-          //   alert("오답")
-          // }
-
+     
           if(value < randomNum){
             result.innerHTML = resultArr[0];
 
@@ -61,7 +63,7 @@
             result.innerHTML = resultArr[1];
             
           }else{
-            //정답
+            
             result.innerHTML = resultArr[2];
           }
           
@@ -69,15 +71,4 @@
       }
       
     </script>
-    </head>
-    <body>
-
-      <div class="contWrap">
-        <h3>내가 생각한 숫자는 몇 일까~요?</h3>
-        <p class="result">(1부터 10사이)</p>
-        <input type="number" value="1" max="10" min="1">
-        <button type="button" class="startBtn">확인</button>
-      </div>
-
-    </body>
 </html>
