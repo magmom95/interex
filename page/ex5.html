@@ -17,7 +17,7 @@
         border-top: 1px dashed #333;
       }
 
-      /* 본문 */
+     
       section .innerWrap {
         position: relative;
         z-index: 100;
@@ -26,12 +26,12 @@
         margin-top:50px;
       }
 
-      /* 이미지 영역 활성 */
+  
       section.active .image {
         opacity: 1;
       }
 
-      /* 이미지 */
+        
       section .image {
         position: fixed;
         width: 100%;
@@ -64,7 +64,7 @@
         var pageNum = 0;
         var totalNum = section.length;
 
-        //스크롤 이벤트
+    
         window.addEventListener("scroll", function(event){
           var scroll = this.scrollY;
 
@@ -78,18 +78,18 @@
         });
 
 
-        //페이지 변경
+        
         function pageChangeFunc(){
 
           for(var i=0; i<totalNum; i++){
             section[i].classList.remove("active");
-            // section[i].className = "";
+         
           }
           section[pageNum].classList.add("active");
 
         }
 
-        //페이지 로드되면 바로 실행
+     
         pageChangeFunc();
       }
       
