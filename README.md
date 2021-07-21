@@ -3,3 +3,4 @@
 ![image](https://user-images.githubusercontent.com/64140544/125444664-d961efeb-ce9a-43a6-aa45-09a029112711.png)
 https://kssong.tistory.com/29
 https://ithub.tistory.com/75
+http://www.tcpschool.com/javascript/js_bom_window
