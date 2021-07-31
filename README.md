@@ -6,3 +6,5 @@ https://kssong.tistory.com/29
 https://ithub.tistory.com/75
 <br>
 http://www.tcpschool.com/javascript/js_bom_window
+<br>
+https://poiemaweb.com/html5-semantic-web
